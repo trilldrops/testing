@@ -1,0 +1,350 @@
+			<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Тест</title> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+    <link href="style/style.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="blueberry.css" />
+    <script src="jquery-3.2.1.min.js"></script>
+
+ <script>
+            /*открываю попап*/
+            $(document).ready(function() { 
+                $('#start').click( function(event){ 
+                    event.preventDefault(); 
+                    $('#overlay').fadeIn(250, 
+                         function(){
+                            $('#popUp') 
+                                .css('display', 'block') 
+                                .animate({opacity: 1, top: '55%'}, 490); 
+                    });
+                });
+            /*по нажатию на крестик закрываю окно*/
+                $('#close, #overlay').click( function(){ 
+                    $('#popUp')
+                        .animate({opacity: 0, top: '35%'}, 490, 
+                            function(){ 
+                                $(this).css('display', 'none'); 
+                                $('#overlay').fadeOut(220); 
+                            }
+                        );
+                });
+            });
+            </script>
+            <style>
+            #popUp {
+                top: 12%; 
+                left: 50%; 
+                height: 350px;
+                position: fixed;
+                width: 650px;  
+                border-radius: 11px;
+                background: #fef; 
+                margin-left: -350px;	
+                margin-top: -200px;
+                display: none; 
+                opacity: 0;
+                padding: 17px;
+                z-index: 6;
+            }
+            #popUp #close {
+            cursor: pointer;
+                position: absolute;
+                width: 23px;
+                height: 23px;
+                top: 17px;
+                right: 17px;
+                display: block;
+            }
+            #overlay {
+                z-index:4; 
+                background-color:#010; 
+                position:fixed; 
+                opacity:0.86;
+                width:100%; 
+                height:100%;
+                display:none; 
+                top:0;
+                left:0;
+            }
+            </style>
+            <script src="jquery.blueberry.js"></script>
+
+            <script>
+            $(window).load(function() {
+                $('.blueberry').blueberry();
+            });
+            </script>
+
+</head>
+<body>
+
+<div class="main">
+<div class="header">
+    <div class="logo"><img src="img/Logo.png" alt="logo"></div>
+    <div class="menu">
+        <ul>
+            <li><a href="#" class="menu-link">home</a></li>
+            <li><a href="#about" class="menu-link">products</a></li>
+            <li><a href="#about" class="menu-link">services</a></li>
+            <li><a href="#" class="menu-link">resources</a></li>
+            <li><a href="#about" class="menu-link">about</a></li>
+            <li><a href="#contact" class="menu-link">contact us</a> </li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+        <div class="main_text">
+            <h2>Device Authentication</h2>
+            <p>SALT Group is a world leader in authentication and security. We </p>
+            <p> have a range of services to improve user authentication. </p>
+            <p>  Discover the possibilities with SALT.</p>
+            <br><br><br><br>
+            <a class="main_text_button" href="#about    ">Get Started</a>
+        </div>
+        <div class="content_img">
+            <div id="content">
+
+                    <!-- blueberry -->
+                    
+                        <div class="blueberry">
+                          <ul class="slides">
+                            <li><img  src="img/Vector_Smart_Object_1.png" alt=""></li>
+                            <li><img src="img/Vector_Smart_Object_12.png" alt=""></li>
+                            <li><img src="img/Vector_Smart_Object_13.png" alt=""></li>
+                          </ul>
+                        </div>
+                    
+                    <!-- blueberry -->
+                    
+                      </div>
+                    
+            
+
+        
+        </div>
+</div>
+<div class="main_out">
+<span>find out more</span>
+<div onclick="location.href='#sections';" style="cursor:pointer;" ><img src="img/2-layers.png" alt=""></div>
+
+</div>
+</div>
+<section id="sections" class="section">
+    <div class="section_block">
+        <div class="blocks">
+          <h1>126,300</h1>
+          <p>Identity Theft Cases Reported 
+                in Australia</p>
+        </div>
+        <div class="blocks">
+          <h1>$20.1bn</h1>
+          <p>Online Transactions per 
+           annum by Australians</p> 
+        </div>
+        <div class="blocks">
+          <h1>45,511</h1>
+          <p>Online Fraud Cases Reported
+          in Australia</p>
+        </div>
+        
+    </div>
+</section>
+<section id="about" class="about">
+  <div class="wrapper">
+      <div class="lefts clearfix" >
+          
+      <div class="about_text">
+            <div class="sas" ></div>
+          <h1>What We Do</h1>
+      </div>
+    </div>
+    <div class="about_info">
+      <div class="about_info_block">
+         <div class="t2">
+             <img src="img/Rectangle_1252.png" alt="">
+             <br><br><br>
+             <p class="pp" >Device Authentication</p>
+             <p class="pp2"  >Hardware-based device fingerprinting resilient to cloning, malware and device jailbreak/root. Hardware-level control over the displayed UI independent of the device operating system. Hardware-level data protection.
+                </p>
+         </div>
+      </div>
+      <div class="about_info_block">
+            <div class="t2">
+            <img src="img/Rectangle_1253.png" alt="">
+            <br><br><br>
+             <p class="pp" >User Authentication</p>
+             <p class="pp2"  >Verify the identity of users for access control with contemporary biometric connected MFA security tokens.
+                </p>
+            </div>
+      </div>
+      <div class="about_info_block">
+            <div class="t2">
+            <img src="img/Layer_679.png" alt="">
+            <br><br><br>
+             <p class="pp" >Transaction Authentication</p>
+             <p class="pp2"  >High assurance out-of-band authentication of high impact transactions and instructions initiated through electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection against man-in-the-middle and browser malware.
+                </p>
+            </div>
+      </div>
+      <div class="about_info_block">
+            <div class="t2">
+            <img src="img/Vector_Smart_Object_3.png" alt="">
+            <br><br><br>
+            <p class="pp" >Contemporary
+                    authentication methods</p>
+            <p class="pp2"  >Echidna authentication server to enable adaptive risk-based approach to security through a range of methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.</p>
+            </div>
+      </div>
+      <div class="about_info_block">
+            <div class="t2">
+            <img src="img/Vector_Smart_Object_5.png" alt="">
+            <br><br><br>
+            <p class="pp" >HSM Solutions</p>
+            <p class="pp2"  >Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key ceremony procedures, and SEE code development. 
+                </p>
+            </div>
+      </div>
+      <div class="about_info_block">
+          <div class="t2">
+            <img src="img/Ellipse_667.png" alt="">
+            <br><br><br>
+            <p class="pp">Cloud & IoT Security</p>
+            <p class="pp2" >Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support cloud adoption and migration of applications and data into private and public clouds.</p>
+          </div>
+      </div>
+
+    </div>
+</div>  
+</section>
+
+
+
+
+<div id="popUp">
+      <span id="close">X</span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3jT_q7dt-cM" frameborder="0" allowfullscreen>
+      </iframe>
+</div>
+<div id="overlay"></div>
+
+
+<section class="product">
+
+<div class="product_block">
+
+    <div class="product_text">
+            <h2>Product Spotlight</h2>
+            <p>Salt mSign Connected Token is a contemporary mobile security 2FA </p>
+             <p>token for authentication of user identity and verification of transactions </p>
+              <p>independent of the delivery channel that initiated the request.</p>
+            <br><br><br><br>
+            <a class="main_text_button" href="#">MORE INFO</a>
+    </div>
+
+    <div class="product_video">
+         <div id="start" class="videos">
+             <img style="    width: 100%;" src="img/4-layers.png" alt="">
+
+         </div>
+    </div>
+
+
+</div>
+
+</section>
+
+
+           
+<div class="started_block">
+        <div class="started_flex">
+            <div class="cell">
+            <div class="t5">
+            <h3 class="" >Ready to get started?</h3>
+            </div>
+            </div>
+
+            <div class="cell">
+            <div class="t5">
+            <a class="main_text_button" href="#">CONTACT US</a>
+            </div>
+            </div>
+        </div>
+
+</div>
+
+<section id="contact" class="footer">
+    <div class="container_footer">
+
+        <div class="footer_block">
+            <div class="tveet">
+                <div class="tveet_img">
+                    <img src="img/tviter.png" alt="">
+                </div>
+                <div class="textf"><h4>@saltgroup</h4> 
+                    <p style="color: #f7f7f7;
+                    font-size: 14px;
+                    font-weight: 400;
+                    " >Twitter feed</p></div>
+             
+            </div>
+            <a class="twitter-timeline" data-lang="ru" data-width="300" data-height="300" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <div class="footer_block"><span>navigation</span>
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="#" class="menu-link">home</a></li>
+                    <li><a href="#" class="menu-link">products</a></li>
+                    <li><a href="#" class="menu-link">services</a></li>
+                    <li><a href="#" class="menu-link">resources</a></li>
+                    <li><a href="#" class="menu-link">about</a></li>
+                    <li><a href="#" class="menu-link">contact us</a> </li>
+                </ul>
+            </div>  
+        </div>
+
+        <div class="footer_block"><span>links</span>
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="#" class="menu-link">Disclaimer</a></li>
+                    <li><a href="#" class="menu-link">Legal</a></li>
+                    <li><a href="#" class="menu-link">Environment Policy</a></li>
+                </ul>
+            </div> </div>
+
+        <div class="footer_block"><span>contact sales</span>
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="#" class="menu-link">PHONE:    +61 3 9614 4416</a></li>
+                    <li><a href="#" class="menu-link">EMAIL:    sales@saltgroup.com.au</a></li>
+                </ul>
+            </div> </div>
+
+
+    </div>
+    <div class="logo_absolute">
+        <img src="img/Vector_Smart_Object.png" alt="">
+    </div>
+</section>
+<div class="foot">© 2017 SALT GROUP<span class="polygon"><img src="/img/Polygon_3.png" alt=""></span>ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</div>
+<script type="text/javascript">
+    $(function(){
+            $("a[href^='#']").click(function(){
+                    var _href = $(this).attr("href");
+                    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                    return false;
+            });
+    });
+    </script>
+</body>
+
+</html>
